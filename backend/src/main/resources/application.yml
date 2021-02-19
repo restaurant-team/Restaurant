@@ -6,5 +6,8 @@ spring:
     password: eadcf75547e9b9f8f91734b3d4228734dd1a4c1c278f05e419f231d531d9581c
 
 server:
-  port: ${PORT:9990}
+    port: 9001
 
+springdoc:
+    swagger-ui:
+      path: /swagger.html
