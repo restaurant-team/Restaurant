@@ -1,3 +1,10 @@
+spring:
+  datasource:
+    # Heroku DB
+    url: jdbc:postgresql://ec2-54-220-35-19.eu-west-1.compute.amazonaws.com:5432/deutahe58app1e
+    username: sgqlzdwdkdtkor
+    password: eadcf75547e9b9f8f91734b3d4228734dd1a4c1c278f05e419f231d531d9581c
+
 server:
   port: ${PORT:9990}
 
