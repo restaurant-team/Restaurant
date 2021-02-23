@@ -10,5 +10,7 @@ public class User extends IdentifiableEntity<UUID> {
     private int roleId;
     private String name;
     private String surname;
+    private String email;
+    private String password;
 
 }

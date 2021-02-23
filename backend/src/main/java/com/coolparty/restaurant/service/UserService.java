@@ -7,5 +7,4 @@ public interface UserService extends CRUDService<User> {
 
     User login(LoginDto loginDto);
 
-    void register(User user);
 }
