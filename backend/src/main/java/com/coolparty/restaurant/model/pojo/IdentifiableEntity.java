@@ -1,4 +1,4 @@
-package com.coolparty.restaurant.model;
+package com.coolparty.restaurant.model.pojo;
 
 import lombok.Data;
 

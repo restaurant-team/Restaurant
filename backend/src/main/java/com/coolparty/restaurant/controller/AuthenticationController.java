@@ -1,6 +1,6 @@
 package com.coolparty.restaurant.controller;
 
-import com.coolparty.restaurant.model.User;
+import com.coolparty.restaurant.model.pojo.User;
 import com.coolparty.restaurant.model.dto.LoginDto;
 import com.coolparty.restaurant.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

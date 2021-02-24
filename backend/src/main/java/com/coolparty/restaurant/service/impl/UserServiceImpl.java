@@ -1,7 +1,7 @@
 package com.coolparty.restaurant.service.impl;
 
 import com.coolparty.restaurant.error.EmailIsUsedException;
-import com.coolparty.restaurant.model.User;
+import com.coolparty.restaurant.model.pojo.User;
 import com.coolparty.restaurant.model.dto.LoginDto;
 import com.coolparty.restaurant.repository.UserDao;
 import com.coolparty.restaurant.service.UserService;
@@ -40,6 +40,11 @@ public class UserServiceImpl implements UserService {
 //        BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder(11);
 //        user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
         return userDao.create(user);
+    }
+
+    @Override
+    public User update(User user) {
+        return null;
     }
 
     @Override

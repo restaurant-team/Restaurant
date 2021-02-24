@@ -1,6 +1,6 @@
 //package com.coolparty.restaurant.service.impl;
 //
-//import com.coolparty.restaurant.model.User;
+//import com.coolparty.restaurant.model.pojo.User;
 //import com.coolparty.restaurant.repository.UserDao;
 //import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.security.core.GrantedAuthority;
