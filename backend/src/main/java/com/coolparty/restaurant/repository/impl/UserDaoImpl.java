@@ -1,6 +1,6 @@
 package com.coolparty.restaurant.repository.impl;
 
-import com.coolparty.restaurant.model.User;
+import com.coolparty.restaurant.model.pojo.User;
 import com.coolparty.restaurant.model.mapper.UserMapper;
 import com.coolparty.restaurant.repository.UserDao;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -47,6 +47,11 @@ public class UserDaoImpl implements UserDao {
                 .addValue("name", user.getName());
         template.update(insertUser, param);
         return findByEmail(user.getEmail());
+    }
+
+    @Override
+    public User update(User user) {
+        return null;
     }
 
     @Override

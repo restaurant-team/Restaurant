@@ -1,6 +1,6 @@
 package com.coolparty.restaurant.model.mapper;
 
-import com.coolparty.restaurant.model.User;
+import com.coolparty.restaurant.model.pojo.User;
 import org.springframework.jdbc.core.RowMapper;
 
 import java.sql.ResultSet;

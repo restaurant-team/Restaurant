@@ -10,6 +10,8 @@ public interface CRUDService<T> {
 
     T create(T t);
 
+    T update(T t);
+
     void delete(Object id);
 
 }
