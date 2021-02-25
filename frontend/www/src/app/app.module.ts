@@ -8,6 +8,8 @@ import {SharedModule} from './modules/shared/shared.module';
 import {CoreModule} from './modules/core/core.module';
 import {AppRoutingModule} from './modules/app-routing/app-routing.module';
 import {LandingModule} from './modules/landing/landing.module';
+import {MenuModule} from './modules/menu/menu.module'
+import {ReservforpersModule} from './modules/reservforpers/reservforpers.module'
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import {LandingModule} from './modules/landing/landing.module';
     HttpClientModule,
     ReservationsModule,
     LandingModule,
+    MenuModule,
+    ReservforpersModule,
     SharedModule,
     CoreModule,
     AppRoutingModule
