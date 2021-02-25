@@ -28,10 +28,10 @@
                 </div>
                 <nav>
                     <ul class="nav">
-                        <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" routerLink="">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="">Menu</a></li>
-                        <li class="nav-item"><a class="nav-link" href="">Reservations</a></li>
+                        <li class="nav-item"><a class="nav-link" routerLink="/reservations">Reservations</a></li>
                         <li class="nav-item"><a class="nav-link" href="">Catering</a></li>
                         <li class="nav-item"><a class="nav-link" href="">Gallery</a></li>
                         <li class="nav-item"><a class="nav-link" href="">Blog</a></li>
@@ -43,6 +43,7 @@
 
         <div class="wrapper">
             <p class="before-title  text-center">Discover</p>
+
             <h1 class="title-h1">Royal Plate</h1>
             <img class="icon" src="assets/img/icon.png" alt="icon" >
             <p class="after-title after-title__opening text-center">Opening hours</p>
@@ -52,71 +53,14 @@
         </div>
         
         <button class="btn-scroll"><img src="assets/img/slider.png"></button>
+        
     </section>
-
-    <section class="about-section">
-        <div class="wrapper">
-            <div class="about">
-                <div class="about-image__rightside">
-                    <img src="assets/img/spices-left.png" alt="spicesleft">
-                </div>
-
-                <div class="about-story">
-                    <p class="before-title  text-center">Our story</p>
-                    <h1 class="title-h1">Love for food</h1>
-                    <p class="about-story__text">Welcome. This is Royal plate. Elegant & sophisticated restaurant template. Royal plate offers different home page layouts with smart and unique design, showcasing beautifully designed elements every restaurant website should have. Smooth animations, fast loading and engaging user experience are just some of the features this template offers.
-                        So, give it a try and dive into a world of royal restaurant websites.</p>
-                </div>
-
-                <div class="about-image__leftside">
-                    <img src="assets/img/spices-right.png" alt="spicesright">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="banner-section">
-        <div class="wrapper">
-            <div class="banner">
-                <p class="before-title  text-center">Exquisite cuisine</p>
-                <h1 class="title-h1">A FEAST FOR YOUR SENSES</h1>
-            </div>
-        </div>
-
-    </section>
-
-    <section class="reservations-section">
-        <div class="wrapper">
-            <div class="reservations">
-                <div class="reservations-image__rightside">
-                    <img src="assets/img/img-02.jpg" alt="spicesleft">
-                </div>
-
-                <div class="reservations-form">
-                    <p class="before-title  text-center">Reservations</p>
-                    <h1 class="title-h1">Sign In to book your table</h1>
-                    <form class="reservations-form__form" id="reservations-form__form">
-
-                        <input class="form__input" type="text" placeholder="Your Email">
-                        <input class="form__input" type="password" placeholder="Password">
-                        <button type="submit" class="btn">Sign In</button>
-                    </form>
-                    <a id="nothaveacc" (click)="Testing()" role="button"><span >Don't have an account? Sign Up!</span></a>
-
-                </div>
-
-                <div class="reservations-image__leftside">
-                    <img src="assets/img/img-03.jpg" alt="spicesright">
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <router-outlet></router-outlet>
     <footer>
         <div class="wrapper">
             
             <div class="footer">
-
+    
                 <p class="after-title after-title__opening text-center">22 Royal Street, Sundance Avenue, New York</p>
                 <p class="after-title after-title__opening text-center"><span>RESERVATIONS NUMBER:</span> +00 25 854 78521</p>
                 <p class="after-title after-title__opening text-center"><span>Working hours</span></p>
@@ -137,14 +81,5 @@
             </div>
         </div>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script>
-        $(document).ready(function() {
-            $("#nothaveacc").click(function(){
-                $("#reservations-form__form").toggle();
-            });
-        });
-    </script>
 </body>
 </html>

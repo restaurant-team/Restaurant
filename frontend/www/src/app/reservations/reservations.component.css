@@ -1,0 +1,116 @@
+body,
+html {
+  height: 100vh;
+}
+
+body {
+  font-family: "Suranna", sans-serif;
+  color: #22222b;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.wrapper {
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.title-h1 {
+  font-size: 70px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 0.2;
+  padding-bottom: 40px;
+}
+
+.before-title {
+  font-size: 50px;
+  font-family: "Montez";
+  font-weight: 400;
+  color: #22222b;
+}
+
+.icon {
+  display: block;
+  width: 44px;
+  height: 37px;
+  margin: 0 auto;
+}
+
+.after-title__opening {
+  padding: 30px 0 0 0;
+  font-size: 26px;
+  color: #22222b;
+}
+
+.after-title__hours {
+  font-size: 18px;
+  color: #7f7f82;
+}
+
+.visitus-section {
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+.restaurant {
+  display: flex;
+  justify-content: space-between;
+}
+
+.restaurant-item__text {
+  font-size: 22px;
+}
+
+.restaurant-item__link {
+  position: relative;
+  font-size: 22px;
+  text-decoration: none;
+  color: #22222b;
+  transition: 0.3s;
+  border-bottom: 1px solid transparent;
+}
+.restaurant-item__link:after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: #22222b;
+  top: calc(50% - 1px);
+  left: 170px;
+}
+
+.restaurant-item__link:hover {
+  border-bottom: 1px solid #22222b;
+}
+
+.reserv-section {
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+
+.form-reserv {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 70px 58px;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid #e1e1e1;
+  font-size: 14px;
+  padding: 17px 25px;
+  text-align: center;
+  margin-bottom: 15px;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+input:focus {
+  outline: none;
+  border-bottom: 1px solid #22222b;
+}
+/*# sourceMappingURL=app.component.css.map */
