@@ -1,27 +1,26 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import {Routes, RouterModule} from '@angular/router'
-
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { ReservationsComponent } from './reservations/reservations.component';
-
-const appRoutes: Routes = [
-  {path: '', component : HomeComponent},
-  {path: 'reservations', component : ReservationsComponent}
-
-]
+import {ReservationsModule} from './modules/reservations/reservations.module';
+import {HttpClientModule} from '@angular/common/http';
+import {SharedModule} from './modules/shared/shared.module';
+import {CoreModule} from './modules/core/core.module';
+import {AppRoutingModule} from './modules/app-routing/app-routing.module';
+import {LandingModule} from './modules/landing/landing.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HomeComponent,
-    ReservationsComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    HttpClientModule,
+    ReservationsModule,
+    LandingModule,
+    SharedModule,
+    CoreModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
