@@ -7,6 +7,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("api/v1/reservation")
 public class ReservationController {
@@ -17,6 +19,11 @@ public class ReservationController {
     public ResponseEntity<Reservation> create(@RequestBody Reservation reservation,
                                               @RequestParam int capacity,
                                               @RequestParam int restaurantId) {
-        return new ResponseEntity(reservationService.createByTableCapacity(reservation, capacity, restaurantId), HttpStatus.CREATED);
+        return new ResponseEntity<>(reservationService.createByTableCapacity(reservation, restaurantId, capacity), HttpStatus.CREATED);
+    }
+
+    @GetMapping
+    public ResponseEntity<List<Reservation>> get(){
+        return new ResponseEntity<>(reservationService.findAll(), HttpStatus.OK);
     }
 }
