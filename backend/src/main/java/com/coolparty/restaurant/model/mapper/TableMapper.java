@@ -16,6 +16,6 @@ public class TableMapper implements RowMapper<Table> {
         table.setTableNumber(resultSet.getInt("table_number"));
         table.setCapacity(resultSet.getInt("capacity"));
         table.setNotes(resultSet.getString("notes"));
-        return null;
+        return table;
     }
 }

@@ -1,6 +1,5 @@
 package com.coolparty.restaurant.repository.impl;
 
-import com.coolparty.restaurant.model.mapper.DishMapper;
 import com.coolparty.restaurant.model.mapper.ReservationMapper;
 import com.coolparty.restaurant.model.pojo.Reservation;
 import com.coolparty.restaurant.repository.ReservationDao;
@@ -28,6 +27,8 @@ public class ReservationDaoImpl implements ReservationDao {
     private String insertReservation;
     @Value("${find_reservation_by_id}")
     private String findReservationById;
+    @Value("${find_all_reservations}")
+    private String findAllReservations;
 
     @Override
     public Reservation find(Object id) {
@@ -38,7 +39,7 @@ public class ReservationDaoImpl implements ReservationDao {
 
     @Override
     public List<Reservation> findAll() {
-        return null;
+        return this.template.query(findAllReservations, new ReservationMapper());
     }
 
     @Override
