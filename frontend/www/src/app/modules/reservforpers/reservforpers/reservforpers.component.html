@@ -13,58 +13,30 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td class="text-center">1</td>
-              <td class="text-center">123</td>
-              <td class="text-center">ZHAN</td>
-              <td class="text-center">ZHEAN@GMAIL.COM</td>
-              <td class="text-center">12:00</td>
-              <td class="text-center">15:00</td>
-            </tr>
-            <tr>
-              <td class="text-center">1</td>
-              <td class="text-center">123</td>
-              <td class="text-center">ZHAN</td>
-              <td class="text-center">ZHEAN@GMAIL.COM</td>
-              <td class="text-center">12:00</td>
-              <td class="text-center">15:00</td>
-            </tr>
-            <tr>
-              <td class="text-center">1</td>
-              <td class="text-center">123</td>
-              <td class="text-center">ZHAN</td>
-              <td class="text-center">ZHEAN@GMAIL.COM</td>
-              <td class="text-center">12:00</td>
-              <td class="text-center">15:00</td>
-            </tr>
-            <tr>
-              <td class="text-center">1</td>
-              <td class="text-center">123</td>
-              <td class="text-center">ZHAN</td>
-              <td class="text-center">ZHEAN@GMAIL.COM</td>
-              <td class="text-center">12:00</td>
-              <td class="text-center">15:00</td>
-            </tr>
-            <tr>
-              <td class="text-center">1</td>
-              <td class="text-center">123</td>
-              <td class="text-center">ZHAN</td>
-              <td class="text-center">ZHEAN@GMAIL.COM</td>
-              <td class="text-center">12:00</td>
-              <td class="text-center">15:00</td>
-            </tr>
-            <tr>
-              <td class="text-center">1</td>
-              <td class="text-center">123</td>
-              <td class="text-center">ZHAN</td>
-              <td class="text-center">ZHEAN@GMAIL.COM</td>
-              <td class="text-center">12:00</td>
-              <td class="text-center">15:00</td>
-            </tr>
+            <ng-container *ngIf="(!isLoading && !isEmpty) ; else (isLoading ? loading : empty)">
+              <tr *ngFor="let item of reservationsList; let i = index">
+                <td class="text-center">{{item.id}}</td>
+                <td class="text-center">{{item.tableId}}</td>
+                <td class="text-center">{{item.name}}</td>
+                <td class="text-center">{{item.email}}</td>
+                <td class="text-center">{{item.reservedFrom}}</td>
+                <td class="text-center">{{item.reservedTo}}</td>
+              </tr>
+            </ng-container>
             </tbody>
             </table>
-          
       </div>
-      
+
     </div>
 </section>
+
+
+<ng-template #empty>
+  <p>The list is empty</p>
+</ng-template>
+
+<ng-template #loading>
+  <div class="card-body text-center">
+    <fa-icon [icon]="faSpinner" [spin]="true" size="6x"></fa-icon>
+  </div>
+</ng-template>
