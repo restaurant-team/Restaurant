@@ -16,7 +16,7 @@ public class RestaurantServiceImpl implements RestaurantService {
 
     @Override
     public Restaurant find(Object id) {
-        return null;
+        return restaurantDao.find(id);
     }
 
     @Override

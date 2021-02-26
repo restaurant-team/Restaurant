@@ -21,4 +21,9 @@ public class RestaurantController {
         return new ResponseEntity<>(restaurantService.findAll(), HttpStatus.OK);
     }
 
+    @GetMapping("{id}")
+    public ResponseEntity<Restaurant> get(@PathVariable int id){
+        return new ResponseEntity<>(restaurantService.find(id), HttpStatus.OK);
+    }
+
 }

@@ -25,13 +25,17 @@ public class RestaurantDaoImpl implements RestaurantDao {
 
     @Value("${find_all_restaurants}")
     private String findAllRestaurants;
+    @Value("${find_restaurant_by_id}")
+    private String findRestaurantById;
     @Value("${find_available_tables}")
     private String findAvailableTables;
 
 
     @Override
     public Restaurant find(Object id) {
-        return null;
+        SqlParameterSource param = new MapSqlParameterSource()
+                .addValue("id", id);
+        return this.template.queryForObject(findRestaurantById, param, new RestaurantMapper());
     }
 
     @Override
