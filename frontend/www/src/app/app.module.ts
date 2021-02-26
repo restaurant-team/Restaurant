@@ -8,8 +8,9 @@ import {SharedModule} from './modules/shared/shared.module';
 import {CoreModule} from './modules/core/core.module';
 import {AppRoutingModule} from './modules/app-routing/app-routing.module';
 import {LandingModule} from './modules/landing/landing.module';
-import {MenuModule} from './modules/menu/menu.module'
-import {ReservforpersModule} from './modules/reservforpers/reservforpers.module'
+import {MenuModule} from './modules/menu/menu.module';
+import {ReservforpersModule} from './modules/reservforpers/reservforpers.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {ReservforpersModule} from './modules/reservforpers/reservforpers.module'
     ReservforpersModule,
     SharedModule,
     CoreModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
