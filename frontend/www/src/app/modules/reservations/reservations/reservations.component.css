@@ -94,7 +94,7 @@ body {
 
 .form-reserv {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 70px 58px;
 }
@@ -112,5 +112,13 @@ input {
 input:focus {
   outline: none;
   border-bottom: 1px solid #22222b;
+}
+
+#dropdownBasic1 {
+  font-size: 2em;
+}
+
+.text-light:hover {
+  color: #444400;
 }
 /*# sourceMappingURL=app.component.css.map */
