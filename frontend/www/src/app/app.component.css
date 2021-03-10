@@ -26,12 +26,12 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100vh;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .header {
@@ -45,37 +45,12 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 30px;
-}
-
-.nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-.nav-item {
-  margin-left: 20px;
-}
-
-.nav-link {
-  text-decoration: none;
-  color: #22222b;
-  border-bottom: 1px solid transparent;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.nav-link:hover {
-  border-bottom: 1px solid #22222b;
 }
 
 .title-h1 {
@@ -118,7 +93,7 @@ body {
 .about-section {
   padding-top: 80px;
   padding-bottom: 100px;
-  background-image: url("/assets/img/download.jpg");
+  background-image: url("../assets/img/download.jpg");
 }
 
 .about {
@@ -126,17 +101,16 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.about-image__rightside,
-.about-image__leftside {
+.about-image__rightside, .about-image__leftside {
   margin-top: 100px;
 }
 
 .about-story {
-  background-image: url("/assets/img/bg-about.jpg");
+  background-image: url("../assets/img/bg-about.png");
   padding-left: 30px;
   padding-right: 30px;
   border: 6px solid #22222b;
@@ -151,7 +125,7 @@ body {
 .banner-section {
   padding-top: 180px;
   padding-bottom: 180px;
-  background-image: url("/assets/img/bkg-img3.jpg");
+  background-image: url("../assets/img/bkg-img3.jpg");
 }
 
 .banner-section .before-title {
@@ -174,8 +148,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .reservations .title-h1,
@@ -189,8 +163,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 750px;
   margin: 0 auto;
 }
@@ -205,7 +179,7 @@ body {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .reservations-form__form .form__input:focus {
@@ -218,7 +192,7 @@ body {
   background-color: #22222b;
   font-size: 16px;
   text-decoration: none;
-  padding: 20px 0px;
+  padding: 20px 0;
   border: none;
 }
 
@@ -243,11 +217,11 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 16px;
   margin-top: 60px;
 }
@@ -267,5 +241,9 @@ footer {
 
 .social .social-network__link {
   color: #fff;
+}
+
+#nothaveacc:focus {
+  cursor: pointer;
 }
 /*# sourceMappingURL=app.component.css.map */

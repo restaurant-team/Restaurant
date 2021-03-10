@@ -1,8 +1,17 @@
+<section class="main">
+  <div class="wrapper">
+      <div class="main__content">
+          <p class="before-title--dark  text-center">Make Reservation</p>
+          <h1 class="title-h1--dark mb-5">Royal Plate</h1>
+          <img class="icon" src="assets/img/icon.png" alt="icon" >
+
+      </div>
+  </div>
+</section>
 <section class="visitus-section">
   <div class="wrapper">
-    <p class="text-center before-title">Visit us</p>
-    <h1 class="title-h1">OUR LOCATIONS</h1>
-
+    <p class="text-center before-title--dark">Visit us</p>
+    <h2 class="title-h2--dark">OUR LOCATIONS</h2>
     <div class="restaurant">
       <div class="restaurant-item">
         <h2 class="title-h2">LONDON CENTER</h2>
@@ -12,13 +21,13 @@
           Royal Club Avenue,
           London, UK
         </p>
-        <p class="after-title after-title__opening ">Opening hours</p>
-        <p class="after-title after-title__hours">Monday - Friday: 8:00 A.M. - 22:00 P.M.</p>
-        <p class="after-title after-title__hours">Weekends: 10:00 A.M. - 23:00 P.M.</p>
+        <p class="after-title">Opening hours</p>
+        <p class="after-title">Monday - Friday: 8:00 A.M. - 22:00 P.M.</p>
+        <p class="after-title">Weekends: 10:00 A.M. - 23:00 P.M.</p>
 
-        <p class="after-title after-title__opening ">Contact</p>
-        <p class="after-title after-title__hours">+00 42 587 9685</p>
-        <p class="after-title after-title__hours">info@royal-plate.com</p>
+        <p class="after-title">Contact</p>
+        <p class="after-title">+00 42 587 9685</p>
+        <p class="after-title">info@royal-plate.com</p>
 
         <a class="restaurant-item__link" href="#">GET DIRECTIONS</a>
 
@@ -31,13 +40,13 @@
           Royal Club Avenue,
           London, UK
         </p>
-        <p class="after-title after-title__opening ">Opening hours</p>
-        <p class="after-title after-title__hours">Monday - Friday: 8:00 A.M. - 22:00 P.M.</p>
-        <p class="after-title after-title__hours">Weekends: 10:00 A.M. - 23:00 P.M.</p>
+        <p class="after-title">Opening hours</p>
+        <p class="after-title">Monday - Friday: 8:00 A.M. - 22:00 P.M.</p>
+        <p class="after-title">Weekends: 10:00 A.M. - 23:00 P.M.</p>
 
-        <p class="after-title after-title__opening ">Contact</p>
-        <p class="after-title after-title__hours">+00 42 587 9685</p>
-        <p class="after-title after-title__hours">info@royal-plate.com</p>
+        <p class="after-title">Contact</p>
+        <p class="after-title">+00 42 587 9685</p>
+        <p class="after-title">info@royal-plate.com</p>
 
         <a class="restaurant-item__link" href="#">GET DIRECTIONS</a>
       </div>
@@ -49,13 +58,13 @@
           Royal Club Avenue,
           London, UK
         </p>
-        <p class="after-title after-title__opening ">Opening hours</p>
-        <p class="after-title after-title__hours">Monday - Friday: 8:00 A.M. - 22:00 P.M.</p>
-        <p class="after-title after-title__hours">Weekends: 10:00 A.M. - 23:00 P.M.</p>
+        <p class="after-title">Opening hours</p>
+        <p class="after-title">Monday - Friday: 8:00 A.M. - 22:00 P.M.</p>
+        <p class="after-title">Weekends: 10:00 A.M. - 23:00 P.M.</p>
 
-        <p class="after-title after-title__opening ">Contact</p>
-        <p class="after-title after-title__hours">+00 42 587 9685</p>
-        <p class="after-title after-title__hours">info@royal-plate.com</p>
+        <p class="after-title">Contact</p>
+        <p class="after-title">+00 42 587 9685</p>
+        <p class="after-title">info@royal-plate.com</p>
 
         <a class="restaurant-item__link" href="#">GET DIRECTIONS</a>
 
@@ -89,8 +98,8 @@
 </section>
 <section class="reserv-section">
   <div class="wrapper">
-    <p class="text-center before-title">Reservation</p>
-    <h1 class="title-h1">BOOK YOUR TABLE</h1>
+    <p class="text-center before-title--dark">Reservation</p>
+    <h2 class="title-h2--dark">BOOK YOUR TABLE</h2>
     <form action="" class="form-reserv">
       <input type="text" name="name" [(ngModel)]="reservation.name" placeholder="Your name" required>
       <input type="email" name="email" [(ngModel)]="reservation.email" placeholder="Your email" required>
@@ -106,9 +115,9 @@
         <input class="w-25" type="number" min="0" [(ngModel)]="numberOfSeats" placeholder="Number of seats needed">
       </div>
     </div>
-    <div class="container bg-light">
-      <div class="col-md-12 text-center">
-        <button type="button" class="btn btn-primary" (click)="makeReservation()">Make reservation</button>
+    <div class="container">
+      <div class="col-md-12 text-center mt-4">
+        <button type="button" class="btn bg-dark text-light" (click)="makeReservation()">Make reservation</button>
       </div>
     </div>
   </div>

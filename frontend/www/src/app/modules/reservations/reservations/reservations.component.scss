@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body,
 html {
   height: 100vh;
@@ -19,23 +18,13 @@ body {
   padding-right: 15px;
   margin: 0 auto;
 }
-
 .main {
   background-image: url("../../../../assets/img/backgroundmakereserv.jpg");
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  /*Центрирование по горизонтали*/
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /*Центрирование по вертикали */
+  justify-content: center; /*Центрирование по горизонтали*/
+  align-items: center; /*Центрирование по вертикали */
   height: 100vh;
 }
-
 .title-h1--white {
   font-size: 90px;
   font-weight: 400;
@@ -67,14 +56,12 @@ body {
   line-height: 0.2;
   color: #22222b;
 }
-
 .before-title--white {
   font-size: 60px;
   font-family: "Montez";
   font-weight: 400;
   color: #fff;
 }
-
 .before-title--dark {
   font-size: 60px;
   font-family: "Montez";
@@ -101,19 +88,13 @@ body {
   height: 37px;
   margin: 0 auto;
 }
-
 .visitus-section {
   padding-top: 100px;
   padding-bottom: 120px;
 }
-
 .restaurant {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding-top: 50px;
 }
 
@@ -126,11 +107,9 @@ body {
   font-size: 22px;
   text-decoration: none;
   color: #22222b;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   border-bottom: 1px solid transparent;
 }
-
 .restaurant-item__link:after {
   position: absolute;
   content: "";
@@ -151,12 +130,9 @@ body {
 }
 
 .form-reserv {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-gap: 70px 58px;
   margin-top: 77px;
 }
@@ -168,12 +144,9 @@ input {
   padding: 17px 25px;
   text-align: center;
   margin-bottom: 15px;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 input:focus {
   outline: none;
   border-bottom: 1px solid #22222b;
@@ -186,4 +159,4 @@ input:focus {
 .text-light:hover {
   color: #444400;
 }
-/*# sourceMappingURL=reservations.component.css.map */
+/*# sourceMappingURL=app.component.css.map */
