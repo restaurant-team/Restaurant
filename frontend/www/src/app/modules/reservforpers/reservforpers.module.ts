@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReservforpersComponent } from './reservforpers/reservforpers.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {SharedModule} from '../shared/shared.module';
 
 
 
@@ -10,6 +11,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
   imports: [
     CommonModule,
     NgbModule,
+    SharedModule
   ],
   exports: [
     ReservforpersComponent,

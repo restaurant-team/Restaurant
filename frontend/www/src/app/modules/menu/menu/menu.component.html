@@ -13,62 +13,31 @@
         <p class="before-title--dark text-center">POPULAR MENU</p>
         <h2 class="title-h1--dark">Popular Dishes</h2>
         <div class="menu mt-5">
-            <div class="menu-item__blank">
+          <ng-container *ngIf="(!isLoading && !isEmpty) ; else (isLoading ? loading : empty)">
+            <div *ngFor="let item of dishesList;">
+              <div class="menu-item__blank">
                 <div class="menu-item">
-                    <div class="menu-item__left">
-                        <p class="menu-item__name">Wild Mushroom Bucatini with Kale</p>
-                        <p class="menu-item__description">Mushroom / Veggie / White Sources</p>
-                    </div>
+                  <div class="menu-item__left">
+                    <p class="menu-item__name">{{item.name}}</p>
+                    <p class="menu-item__description">{{item.description}}</p>
+                  </div>
                 </div>
                 <div class="menu-item__price">
-                    <span>&#36;16</span>
+                  <span>&#36;{{item.price}}</span>
                 </div>
+              </div>
             </div>
-            <div class="menu-item__blank">
-                <div class="menu-item">
-                    <div class="menu-item__left">
-                        <p class="menu-item__name">Wild Mushroom Bucatini with Kale</p>
-                        <p class="menu-item__description">Mushroom / Veggie / White Sources</p>
-                    </div>
-                </div>
-                <div class="menu-item__price">
-                    <span>&#36;16</span>
-                </div>
-            </div>
-            <div class="menu-item__blank">
-                <div class="menu-item">
-                    <div class="menu-item__left">
-                        <p class="menu-item__name">Wild Mushroom Bucatini with Kale</p>
-                        <p class="menu-item__description">Mushroom / Veggie / White Sources</p>
-                    </div>
-                </div>
-                <div class="menu-item__price">
-                    <span>&#36;16</span>
-                </div>
-            </div>
-            <div class="menu-item__blank">
-                <div class="menu-item">
-                    <div class="menu-item__left">
-                        <p class="menu-item__name">Wild Mushroom Bucatini with Kale</p>
-                        <p class="menu-item__description">Mushroom / Veggie / White Sources</p>
-                    </div>
-                </div>
-                <div class="menu-item__price">
-                    <span>&#36;16</span>
-                </div>
-            </div>
-            <div class="menu-item__blank">
-                <div class="menu-item">
-                    <div class="menu-item__left">
-                        <p class="menu-item__name">Wild Mushroom Bucatini with Kale</p>
-                        <p class="menu-item__description">Mushroom / Veggie / White Sources</p>
-                    </div>
-                </div>
-                <div class="menu-item__price">
-                    <span>&#36;16</span>
-                </div>
-            </div>
-            
+          </ng-container>
         </div>
     </div>
 </section>
+
+<ng-template #empty>
+  <p>Sorry, the list of dishes is empty. Please, contact the administrators</p>
+</ng-template>
+
+<ng-template #loading>
+  <div class="card-body text-center">
+    <fa-icon [icon]="faSpinner" [spin]="true" size="6x"></fa-icon>
+  </div>
+</ng-template>
