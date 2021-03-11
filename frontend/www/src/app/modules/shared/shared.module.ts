@@ -4,7 +4,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import {AppRoutingModule} from '../app-routing/app-routing.module';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { ToastsComponent } from './toasts/toasts.component';
-
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -12,12 +12,14 @@ import { ToastsComponent } from './toasts/toasts.component';
   imports: [
     CommonModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FontAwesomeModule
   ],
   exports: [
     NavBarComponent,
     ToastsComponent,
-    NgbModule
+    NgbModule,
+    FontAwesomeModule
   ]
 })
 export class SharedModule { }

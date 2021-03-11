@@ -24,7 +24,7 @@
           </thead>
           <tbody>
             <ng-container *ngIf="(!isLoading && !isEmpty) ; else (isLoading ? loading : empty)">
-              <tr *ngFor="let item of reservationsList; let i = index">
+              <tr *ngFor="let item of reservationsList;">
                 <td class="text-center">{{item.id}}</td>
                 <td class="text-center">{{item.tableId}}</td>
                 <td class="text-center">{{item.name}}</td>

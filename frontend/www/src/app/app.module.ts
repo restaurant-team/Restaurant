@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import {ReservationsModule} from './modules/reservations/reservations.module';
 import {HttpClientModule} from '@angular/common/http';
@@ -11,6 +10,7 @@ import {LandingModule} from './modules/landing/landing.module';
 import {MenuModule} from './modules/menu/menu.module';
 import {ReservforpersModule} from './modules/reservforpers/reservforpers.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -26,7 +26,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     SharedModule,
     CoreModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
